@@ -2,4 +2,4 @@
 
 Repo to use when testing pr-lint.
 
-PRLint
+PRLint checks that your PR abides by team conventions.
