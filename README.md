@@ -1,3 +1,3 @@
 # test-prlint
 
-Repo to use when testing pr-lint
+Repo to use when testing pr-lint.
