@@ -3,7 +3,11 @@
     "checks": {
         "commit": {
             "Always true test": "true",
-            "Not more than 1 file changed": "commit.files.length < 2"
+            "Not more than 1 file changed": "commit.files.length < 2",
+            "The name of the file changed must not be .prlint": [
+                "let name = commit.files[0].filename",
+                "return name != '.prlint';"
+            ]
         }
     }
 }
