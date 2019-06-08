@@ -1,4 +1,8 @@
 {
     "include": {},
-    "checks": {}
+    "checks": {
+        "commit": {
+            "Always true test": "true"
+        }
+    }
 }
