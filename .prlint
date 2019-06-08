@@ -9,6 +9,6 @@
                 "return name != '.prlint';"
             ]
         },
-        "pr": { }
+        "pr": {}
     }
 }
