@@ -2,7 +2,8 @@
     "include": {},
     "checks": {
         "commit": {
-            "Always true test": "true"
+            "Always true test": "true",
+            "Not more than 1 file changed": "commit.files.length < 2"
         }
     }
 }
