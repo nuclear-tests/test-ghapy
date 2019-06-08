@@ -8,6 +8,7 @@
                 "let name = commit.files[0].filename",
                 "return name != '.prlint';"
             ]
-        }
+        },
+        "pr": {}
     }
 }
