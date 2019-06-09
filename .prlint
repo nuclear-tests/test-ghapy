@@ -5,8 +5,9 @@
             "Always true test": "true",
             "Not more than 1 file changed": "commit.files.length < 2",
             "The name of the file changed must not be .prlint": [
-                "let name = commit.files[0].filename",
-                "return name != '.prlint';"
+                "let file = commit.files[0].filename",
+                "let author = commit.commit.author.name",
+                "return (file != '.prlint' || author == 'Chieze Franklin');"
             ]
         },
         "pr": {
