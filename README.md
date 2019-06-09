@@ -18,4 +18,4 @@ Each check is a key-value pair where the key is the name of the check to perform
 
 If the script evaluates to true then the check passes. If not, the check fails.
 
-The script can be either a string or an array of strings.
+The script can be either a string or an array of strings. If the script tag is a string it is expected to be an expression to be evaluated, not a return statement; i.e. it is not expected to have the return keyword. If the script tag is an array of
