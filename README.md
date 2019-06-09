@@ -1,6 +1,6 @@
 # test-prlint
 
-Repo to use when testing pr-lint.
+Repo to use when testing PRLint Bot.
 
 PRLint checks that your PR abides by team conventions.
 
