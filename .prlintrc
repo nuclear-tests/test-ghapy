@@ -1,24 +1,24 @@
 {
-    "include": {},
-    "checks": {
-        "branch": {
-            "Name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "true"
-        },
-        "commit": {
-            "Always true test": "true",
-            "Not more than 1 file changed": "commit.files.length < 2",
-            "The name of the file changed must not be .prlint": [
-                "let file = commit.files[0].filename",
-                "let author = commit.commit.author.name",
-                "return (file != '.prlint' || author == 'Chieze Franklin');"
-            ],
-            "The name of the file changed must not start with README": [
-                "let file = commit.files[0].filename",
-                "return !file.startsWith('README')"
-            ]
-        },
-        "pr": {
-            "Always true test ": "true"
-        }
-    }
+	"include": {},
+	"checks": {
+		"branch": {
+			"Name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)"
+		},
+		"commit": {
+			"Always true test": "true",
+			"Not more than 1 file changed": "commit.files.length < 2",
+			"The name of the file changed must not be .prlint": [
+				"let file = commit.files[0].filename",
+				"let author = commit.commit.author.name",
+				"return (file != '.prlint' || author == 'Chieze Franklin');"
+			],
+			"The name of the file changed must not start with README": [
+				"let file = commit.files[0].filename",
+				"return !file.startsWith('README')"
+			]
+		},
+		"pr": {
+			"Always true test ": "true"
+		}
+	}
 }
