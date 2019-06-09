@@ -11,6 +11,10 @@
                 "let file = commit.files[0].filename",
                 "let author = commit.commit.author.name",
                 "return (file != '.prlint' || author == 'Chieze Franklin');"
+            ],
+            "The name of the file changed must not start with README": [
+                "let file = commit.files[0].filename",
+                "return !file.startsWith('README')"
             ]
         },
         "pr": {
