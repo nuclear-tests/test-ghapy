@@ -9,6 +9,8 @@
                 "return name != '.prlint';"
             ]
         },
-        "pr": { }
+        "pr": {
+            "Always true test": "true"
+        }
     }
 }
