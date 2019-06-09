@@ -16,6 +16,6 @@ The `pr` object contains checks that should be performed on the pull request tha
 
 Each check is a key-value pair where the key is the name of the check to perform and the value is the (JavaScript) script to be executed for that check.
 
-If the script evaluates to true then the check passes. If not,
+If the script evaluates to true then the check passes. If not, the check fails.
 
 The script can be either a string or an array of strings.
