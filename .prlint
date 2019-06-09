@@ -10,7 +10,7 @@
             ]
         },
         "pr": {
-            "Always true test": "true"
+            "Always true test ": "true"
         }
     }
 }
