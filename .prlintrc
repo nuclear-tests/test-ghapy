@@ -2,7 +2,7 @@
     "include": {},
     "checks": {
         "branch": {
-            "Name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "/^((ft-)|(ch-)|(bug-))[a-z\-]+$/.test(branch.name)"
+            "Name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "true"
         },
         "commit": {
             "Always true test": "true",
