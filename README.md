@@ -14,4 +14,8 @@ The `commit` object contains checks that should be performed on the commit that 
 
 The `pr` object contains checks that should be performed on the pull request that triggered the check.
 
-Each check is a key-value pair where the key is the name of the check to perform and the value is
+Each check is a key-value pair where the key is the name of the check to perform and the value is the script to be executed for that check.
+
+If the script evaluates to true
+
+The script can be either a string or an array of strings.
