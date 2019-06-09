@@ -1,6 +1,9 @@
 {
     "include": {},
     "checks": {
+        "branch": {
+            "Branch name must start with 'Chieze-Franklin-patch-'": "branch.name.startsWith('Chieze-Franklin-patch-')"
+        },
         "commit": {
             "Always true test": "true",
             "Not more than 1 file changed": "commit.files.length < 2",
