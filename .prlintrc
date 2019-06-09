@@ -2,7 +2,7 @@
 	"include": {},
 	"checks": {
 		"branch": {
-			"Name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)"
+			"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)"
 		},
 		"commit": {
 			"Always true test": "true",
@@ -14,7 +14,7 @@
 			],
 			"The name of the file changed must not start with README": [
 				"let file = commit.files[0].filename",
-				"return !file.startsWith('README')"
+				"return !file.startsWith('README') || commit.commit.author.name == 'Chieze Franklin'"
 			]
 		},
 		"pr": {
