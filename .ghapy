@@ -1,27 +1,24 @@
 {
-	"include": {},
 	"checks": {
 		"branch": {
 			"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
 				"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
-				"message": "Yo!!! This is totally a user-defined message!"
+				"message": "The name of this branch doesn't meet the specified criteria"
 			}
 		},
 		"commit": {
-			"Always true test": "true",
-			"Not more than 1 file changed": "commit.files.length < 2",
-			"The name of the file changed must not be .prlint": [
-				"let file = commit.files[0].filename",
-				"let author = commit.commit.author.name",
-				"return (file != '.prlint' || author == 'Chieze Franklin');"
-			],
-			"The name of the file changed must not start with README": [
-				"let file = commit.files[0].filename",
-				"return !file.startsWith('README') || commit.commit.author.name == 'Chieze Franklin'"
-			]
+			"A commit cannot touch more than 1 file": "commit.files.length < 2",
+			"The name of the file changed must not be .ghapy": {
+				"script": [
+					"let file = commit.files[0].filename",
+					"let author = commit.commit.author.name",
+					"return (file != '.ghapy' || author == 'Chieze Franklin');"
+				],
+				"message": "The .ghapy file shouldn't be touched; Only Chieze Franklin should touch the file."
+			}
 		},
 		"pr": {
-			"Always true test ": "true"
+			"A PR cannot touch more than 1 file": "pr.changed_files < 2"
 		}
 	}
 }
