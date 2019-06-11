@@ -2,7 +2,10 @@
 	"include": {},
 	"checks": {
 		"branch": {
-			"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)"
+			"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
+				"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
+				"message": "Yo!!! This is totally a user-defined message!"
+			}
 		},
 		"commit": {
 			"Always true test": "true",
