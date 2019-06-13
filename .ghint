@@ -1,6 +1,6 @@
 {
 	"options": {
-		"detectPull": true
+		"detectPull": false
 	},
 	"checks": {
 		
