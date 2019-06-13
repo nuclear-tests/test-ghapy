@@ -6,7 +6,7 @@ Ghint checks that your PR abides by team conventions.
 
 The root directory of your repo should contain a .ghint file.
 
-The .prlintrc file should contain a field called `checks`.
+The .ghint file should contain a field called `checks`.
 
 The `checks` object may contain the following fields: `branch`, `commit`, `pr`, `tree`.
 
@@ -14,7 +14,7 @@ The `commit` object contains checks that should be performed on the commit that 
 
 The `pr` object contains checks that should be performed on the pull request that triggered the check.
 
-The `tree`
+The `tree` object contains checks that should be performed on the pull request that triggered the check.
 
 Each check is a key-value pair where the key is the name of the check to perform and the value is either a string, an array of strings or an object that holds the (JavaScript) script to be executed for that check.
 * If the value is a string it is expected to be an expression to be evaluated, not a return statement; i.e. it is not expected to have the return keyword.
