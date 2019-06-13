@@ -17,6 +17,7 @@
 				"return (file != '.ghint' || editor == 'Chieze Franklin');"
 			],
 			"message": "The .ghint file shouldn't be touched; Only Franklin can edit the file."
-		}
+		},
+		"Repo must contain CONTRIBUTING.md": "tree.tree.filter(t => t.path === 'CONTRIBUTING.md').length === 1"
 	}
 }
