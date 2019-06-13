@@ -1,27 +1,8 @@
 {
+	"options": {
+		"detectPull": true
+	},
 	"checks": {
-		"branch": {
-			"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
-				"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
-				"message": "The name of this branch doesn't meet the specified criteria"
-			}
-		},
-		"commit": {
-			"A commit cannot touch more than 1 file": "commit.files.length < 2",
-			"The name of the file changed must not be .ghapy": {
-				"script": [
-					"let file = commit.files[0].filename",
-					"let author = commit.commit.author.name",
-					"return (file != '.ghapy' || author == 'Chieze Franklin');"
-				],
-				"message": "The .ghapy file shouldn't be touched; Only Chieze Franklin should touch the file."
-			}
-		},
-		"pr": {
-			"A PR cannot touch more than 1 file": "pr.changed_files < 2"
-		},
-		"tree": {
-			"Repo must contain CONTRIBUTING.md": "tree.tree.filter(t => t.path === 'CONTRIBUTING.md').length === 1"
-		}
+		
 	}
 }
