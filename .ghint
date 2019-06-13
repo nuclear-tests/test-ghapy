@@ -1,6 +1,6 @@
 {
 	"options": {
-		"detectPull": false
+		"detectPull": true
 	},
 	"checks": {
 		"This check always passes": "true",
