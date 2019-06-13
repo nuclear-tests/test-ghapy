@@ -2,7 +2,7 @@
 
 Repo to use when testing Ghint Bot.
 
-PRLint checks that your PR abides by team conventions.
+Ghint checks that your PR abides by team conventions.
 
 The root directory of your repo should contain a .prlintrc file.
 
