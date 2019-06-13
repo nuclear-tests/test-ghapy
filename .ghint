@@ -19,6 +19,9 @@
 		},
 		"pr": {
 			"A PR cannot touch more than 1 file": "pr.changed_files < 2"
+		},
+		"tree": {
+			"Repo must contain CONTRIBUTING.md": "tree.tree.filter(t => t.path === 'CONTRIBUTING.md').length === 1"
 		}
 	}
 }
