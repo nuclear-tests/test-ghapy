@@ -4,12 +4,19 @@
 	},
 	"checks": {
 		"This check always passes": "true",
-		"An empty check always fail": ["", "   "],
 		"A commit cannot touch more than 1 file": "commit.files.length < 2",
 		"The message of a head commit must match the name of the branch": "commit.commit.message === branch.name",
 		"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
 			"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
 			"message": "The name of this branch doesn't meet the specified criteria"
+		},
+		"Only Franklin can edit the .ghint file": {
+			"script": [
+				"let file = commit.files[0].filename",
+				"let editor = commit.commit.author.name",
+				"return (file != '.ghint' || editor == 'Chieze Franklin');"
+			],
+			"message": "The .ghint file shouldn't be touched; Only Franklin can edit the file."
 		}
 	}
 }
