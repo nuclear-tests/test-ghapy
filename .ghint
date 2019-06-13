@@ -3,7 +3,10 @@
 		"detectPull": false
 	},
 	"checks": {
+		"This check always passes": "true",
+		"An empty check always passes too": "",
 		"A commit cannot touch more than 1 file": "commit.files.length < 2",
+		"The message of a head commit must match the name of the branch": "commit.commit.message === branch.name",
 		"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
 			"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
 			"message": "The name of this branch doesn't meet the specified criteria"
