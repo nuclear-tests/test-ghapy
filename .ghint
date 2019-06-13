@@ -3,6 +3,7 @@
 		"detectPull": false
 	},
 	"checks": {
+		"A commit cannot touch more than 1 file": "commit.files.length < 2",
 		"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
 			"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
 			"message": "The name of this branch doesn't meet the specified criteria"
