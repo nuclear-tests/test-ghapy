@@ -4,7 +4,7 @@ Repo to use when testing Ghint Bot.
 
 Ghint checks that your PR abides by team conventions.
 
-The root directory of your repo should contain a .prlintrc file.
+The root directory of your repo should contain a .ghint file.
 
 The .prlintrc file should contain a field called `checks`.
 
