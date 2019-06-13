@@ -1,4 +1,4 @@
-# test-prlint
+# test-ghint
 
 Repo to use when testing PRLint Bot.
 
