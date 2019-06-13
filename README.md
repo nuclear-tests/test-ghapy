@@ -1,6 +1,6 @@
 # test-ghint
 
-Repo to use when testing PRLint Bot.
+Repo to use when testing Ghint Bot.
 
 PRLint checks that your PR abides by team conventions.
 
