@@ -8,7 +8,7 @@ The root directory of your repo should contain a .ghint file.
 
 The .prlintrc file should contain a field called `checks`.
 
-The `checks` object may contain the following fields: `commit`, `pr`.
+The `checks` object may contain the following fields: `branch`, `commit`, `pr`, `tree`.
 
 The `commit` object contains checks that should be performed on the commit that triggered the check.
 
