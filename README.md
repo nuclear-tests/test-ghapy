@@ -8,7 +8,7 @@ The root directory of your repo should contain a .ghint file.
 
 The .ghint file should contain a field called `checks`.
 
-The `checks` object may contain the following fields: `branch`, `commit`, `pr`, `tree`.
+The `checks` object contains checks to be performed.
 
 The `commit` object contains checks that should be performed on the commit that triggered the check.
 
