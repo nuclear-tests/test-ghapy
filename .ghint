@@ -11,6 +11,7 @@
 			"return commitMessage === branchName;"
 		],
 		"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
+			"skip": true,
 			"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
 			"message": "The name of this branch doesn't meet the specified criteria"
 		},
