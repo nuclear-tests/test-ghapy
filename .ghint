@@ -3,7 +3,7 @@
 		"detectPull": true
 	},
 	"checks": {
-		"This check always passes ": "true",
+		"This check always passes": "true",
 		"A commit cannot touch more than 1 file": "commit.files.length < 2",
 		"The message of a head commit must match the name of the branch": [
 			"const commitMessage = commit.commit.message;",
