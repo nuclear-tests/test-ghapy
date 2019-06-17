@@ -16,6 +16,7 @@
 			"message": "The name of this branch doesn't meet the specified criteria"
 		},
 		"Only Franklin can edit the .ghint file": {
+			"skip": true,
 			"script": [
 				"let file = commit.files[0].filename",
 				"let editor = commit.commit.author.name",
