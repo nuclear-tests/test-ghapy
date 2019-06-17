@@ -11,12 +11,10 @@
 			"return commitMessage === branchName;"
 		],
 		"Branch name must start with 'ft-' or 'ch-' or 'bug-' followed by stuff": {
-			"skip": true,
 			"script": "/^((ft-)|(ch-)|(bug-))[a-z0-9\\-]+$/.test(branch.name)",
 			"message": "The name of this branch doesn't meet the specified criteria"
 		},
 		"Only Franklin can edit the .ghint file": {
-			"skip": true,
 			"script": [
 				"let file = commit.files[0].filename",
 				"let editor = commit.commit.author.name",
