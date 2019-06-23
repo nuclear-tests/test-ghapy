@@ -1,7 +1,7 @@
 {
 	"options": {
 		"detectPull": true,
-		"getPullReviews": true
+		"getPullReviews": false
 	},
 	"checks": {
 		"This check always passes": "true",
