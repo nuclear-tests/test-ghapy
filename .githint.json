@@ -57,6 +57,6 @@
 		},
 		"Repo must contain CONTRIBUTING.md": "tree.tree.filter(t => t.path === 'CONTRIBUTING.md').length === 1",
 		"A PR cannot touch more than 1 file": "pull.changed_files < 2",
-		"A PR must have at least 1 approval": "pull.reviews.filter(r => r.state === 'APPROVED').length >= 1"
+		"A PR must have at least 2 approval": "pull.reviews.filter(r => r.state === 'APPROVED').length >= 2"
 	}
 }
