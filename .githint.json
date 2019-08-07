@@ -1,6 +1,6 @@
 {
 	"options": {
-		"detectPull": "true",
+		"detectPull": "commit.author.login.toLowerCase() !== 'chieze-franklin'",
 		"skip": "commit.author.login.toLowerCase() === 'chieze-franklin'"
 	},
 	"checks": {
