@@ -1,8 +1,8 @@
-# test-ghint
+# test-githint
 
-Repo to use when testing Ghint Bot.
+Repo to use when testing Githint Bot.
 
-Ghint checks that your PR abides by team conventions.
+Githint checks that your PR abides by team conventions.
 
 The root directory of your repo should contain a .ghint file.
 
